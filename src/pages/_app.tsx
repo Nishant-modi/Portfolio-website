@@ -5,7 +5,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>spacesvr project</title>
+        <title>JMangoes</title>
       </Head>
       <Component {...pageProps} />
     </>
