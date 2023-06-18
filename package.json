@@ -10,6 +10,7 @@
     "prettier": "prettier --list-different 'src/**/*.{js,jsx,ts,tsx,md}'"
   },
   "dependencies": {
+    "@react-three/drei": "^9.76.0",
     "next": "^12.1.6",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -22,10 +23,12 @@
     "@types/three": "0.150.1",
     "@typescript-eslint/eslint-plugin": "^3.2.0",
     "@typescript-eslint/parser": "^3.2.0",
+    "babel-plugin-glsl": "^1.0.0",
     "eslint": "^7.20.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.4",
+    "glslify": "^7.1.1",
     "prettier": "^2.2.1",
     "typescript": "4.7.3"
   }
