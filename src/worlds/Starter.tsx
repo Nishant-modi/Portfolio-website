@@ -1,11 +1,11 @@
-import { Spinning, Floating, StandardReality, Model, Fog, HDRI, EnvironmentProps} from "spacesvr";
+import { Spinning, Floating, StandardReality, Model, Fog, HDRI, EnvironmentProps, Collidable, Interactable} from "spacesvr";
 import TransparentFloor from "ideas/TransparentFloor";
 import CloudySky from "ideas/CloudySky";
 import React, {useRef} from 'react';
-import THREE from 'three';
+import THREE, { IcosahedronGeometry } from 'three';
 import { useFrame, useThree, useLoader, Canvas, createPortal as createPortal$1, extend } from '@react-three/fiber';
 //import { Canvas } from 'react-three-fiber';
-import {Box, Sky, shaderMaterial} from "@react-three/drei";
+import {Box, Icosahedron, Sky, shaderMaterial} from "@react-three/drei";
 
 //import glsl from 'glslify';
 
@@ -14,12 +14,21 @@ export default function Starter() {
   return (
     <StandardReality>
       <ambientLight intensity = {1} />
-      <Model scale = {0.007} rotation-x = {-Math.PI/2} position-y = {0.01} src = "./vrShowcaseGlassFixed.glb"/>
-      <Model scale = {0.01} position-y = {0.7} src = "./product.glb"/>
+      {/*<Model scale = {0.007} rotation-x = {-Math.PI/2} position-y = {0.01} src = "./vrShowcaseGlassFixed.glb"/>
+      <Model scale = {0.01} position-y = {0.7} src = "./product.glb"/>*/}
       
+      <Collidable triLimit={1000} enabled={true} hideCollisionMeshes={false}>
+      <Model scale = {0.27} position-y = {0.3} src = "./mainBeamBase.glb"/>
+      </Collidable>
+
+      <Model scale = {0.27} position-y = {0.3} src = "./mainBeamFloor.glb"/>
+
+      <Icosahedron args ={[1.3,1]} position-y = {3}>
+      </Icosahedron>
+
       <pointLight intensity = {1} position={[10, 10, 11]} />
-      <Fog color = "black" near = {0.1} far = {10}/>
-      <HDRI src = "./Skyhdr1.hdr"  disableBackground = {false} disableEnvironment = {true}/>
+      <Fog color = "black" near = {0.1} far = {20}/>
+      <HDRI src = "./Skyhdr1.hdr"/>
       <TransparentFloor opacity={0.1} />
       
     </StandardReality>
