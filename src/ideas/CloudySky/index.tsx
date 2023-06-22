@@ -3,7 +3,7 @@ import { Color } from "three";
 import { useSkyMat } from "./materials/sky";
 
 type GradientSky = {
-  color?: string;
+  color?: null;
 } & GroupProps;
 
 const RADIUS = 100;
