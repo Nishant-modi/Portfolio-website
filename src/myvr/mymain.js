@@ -1840,8 +1840,8 @@ const useEnvironmentState = name => {
 function PauseMenu(props) {
   const {
     title = "spacesvr",
-    title2 = "bingbong",
-    subTitle = "Game designer, artist, developer",
+    title2 = "jmangoes",
+    subTitle = "Game designer , artist, developer",
     pauseMenuItems = [],
     dev = false
   } = props;
@@ -1858,11 +1858,11 @@ function PauseMenu(props) {
   }, [menuItems, setPaused]);
   const hex = useMemo(() => new Idea().setFromCreation(Math.random(), 0.8, 0.95).getHex(), []);
   const PAUSE_ITEMS = [...pauseMenuItems, {
-    text: "v2.12.2",
+    text: "github",
     link: "https://www.npmjs.com/package/spacesvr"
   },
   {
-    text: "what",
+    text: "itch",
     link: "https://www.npmjs.com/package/spacesvr"
   }, ...menuItems];
   return /*#__PURE__*/React.createElement(Container$1, {
@@ -2875,7 +2875,7 @@ const useBob = (velocity, direction) => {
 
 const PlayerContext = /*#__PURE__*/createContext({});
 const usePlayer = () => useContext(PlayerContext);
-const SPEED = 3.6; // (m/s) 1.4 walking, 2.6 jogging, 4.1 running
+const SPEED = 7; // (m/s) 1.4 walking, 2.6 jogging, 4.1 running
 
 const SHOW_PLAYER_HITBOX = false;
 
