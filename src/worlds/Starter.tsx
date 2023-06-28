@@ -29,10 +29,19 @@ export default function Starter() {
       <Icosahedron args ={[5,1]} position-y = {10}position-x = {-100} >
       </Icosahedron>
 
-      <pointLight intensity = {1} position={[10, 10, 11]} />*/}
+      <pointLight intensity = {1} position={[10, 10, 11]} />
       
+      <Model scale = {0.5} position-y = {-1} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Final2.glb"/>*/}
+
       <Collidable triLimit={10000} enabled={true} hideCollisionMeshes={false}>
-      <Model scale = {0.5} position-y = {-1} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Final1.glb"/>
+      <Model scale = {0.5} position-y = {-1.7} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Beam.glb"/>
+      <Model scale = {0.5} position-y = {-1} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Islands.glb"/>
+      <Model scale = {0.5} position-y = {-1} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Bridges.glb"/>
+      <Model scale = {0.5} position-y = {-1.5} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Machine_Base.glb"/>
+      <Model scale = {0.5} position-y = {-2} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Machine.glb"/>
+      <Model scale = {0.5} position-y = {-1.7} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Dish.glb"/>
+      <Model scale = {0.5} position-y = {-1} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Hall.glb"/>
+      <Model scale = {0.5} position-y = {-1} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Banners.glb"/>
       </Collidable >
       
 
