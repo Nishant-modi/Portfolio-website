@@ -33,7 +33,7 @@ export default function Starter() {
       
       <Collidable triLimit={10000} enabled={true} hideCollisionMeshes={false}>
       <Model scale = {0.5} position-y = {-1} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Final1.glb"/>
-      </Collidable>
+      </Collidable >
       
 
       <Fog color = "black" near = {0.1} far = {500}/>
