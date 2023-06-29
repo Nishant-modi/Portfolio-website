@@ -1,5 +1,5 @@
-import { Spinning, Floating, Model, Fog, HDRI, EnvironmentProps, Collidable, Interactable, PlayerProps, Player, useEnvironment, useKeyboardLayout, Idea, MenuItem} from "spacesvr";
-import {StandardReality} from "myvr/mymain.js";
+import { Spinning, Floating, Model, Fog, HDRI, EnvironmentProps, Collidable, PlayerProps, Player, useEnvironment, useKeyboardLayout, Idea, MenuItem, Video} from "spacesvr";
+import {StandardReality, Interactable} from "myvr/mymain.js";
 import TransparentFloor from "ideas/TransparentFloor";
 import CloudySky from "ideas/CloudySky";
 import React, {useRef} from 'react';
@@ -45,6 +45,11 @@ export default function Starter() {
       </Collidable >
       
 
+      <Interactable onClick={() => window.open("https://www.google.com",'_blank')} onHover={()=> console.log("Hovered")} onUnHover={()=> console.log("Unhovered")}>
+
+      <Video src="./Mirrors_Banner.mp4" size={12.1} position = {[-97.13, 7, 13.4]} rotation-y={(Math.PI)+0.153} framed frameWidth={1} />
+
+      </Interactable>
       <Fog color = "black" near = {0.1} far = {500}/>
       <HDRI src = "./Skyhdr3.hdr" rotation-z = {Math.PI/2} rotation-y = {Math.PI} /> 
       {/*<TransparentFloor opacity={0.1} />*/}

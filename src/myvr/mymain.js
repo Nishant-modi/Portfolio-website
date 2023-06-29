@@ -1463,6 +1463,12 @@ const globalStyles = css`
     font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
     }
 
+    @font-face {
+      font-family:"rig-solid-bold-fill";
+      src:url("https://use.typekit.net/af/932505/00000000000000007735bf40/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/932505/00000000000000007735bf40/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/932505/00000000000000007735bf40/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+      font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+      }  
+
   html {
     position: fixed;
     height: 100%;
@@ -1599,7 +1605,7 @@ const Container$2 = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: sketchnote-square, sans-serif;
+  font-family: rig-solid-bold-fill, sans-serif;
   font-size: 20px;
   @media screen and (max-width: 500px) {
     font-size: 24px;
@@ -1659,7 +1665,7 @@ const Container$1 = styled.div`
   align-items: center;
   opacity: ${props => props.paused ? 1 : 0};
   pointer-events: ${props => props.paused ? "all" : "none"};
-  font-family: "sketchnote-square", sans-serif;
+  font-family: rig-solid-bold-fill, sans-serif;
   font-weight: 400;
   font-style: normal; 
   font-size: 27px;
@@ -1701,7 +1707,7 @@ const Continue = styled.div`
   cursor: pointer;
   text-align: center;
   font-size: 1.3em;
-  font-family: "Muli Black", sans-serif;
+  font-family: rig-solid-bold-fill, sans-serif;
   transition: opacity 0.15s linear;
   margin-top: 20px;
   background: ${props => props.color};
