@@ -1446,11 +1446,28 @@ const Container$3 = styled.div`
   }
 `;
 
+
+
 const globalStyles = css`
+
+@import url("https://use.typekit.net/eqf0dzv.css");
+
   @font-face {
     font-family: "Quicksand";
     src: url("https://d27rt3a60hh1lx.cloudfront.net/fonts/Quicksand_Bold.otf");
   }
+
+  @font-face {
+    font-family:"sketchnote-square";
+    src:url("https://use.typekit.net/af/78d776/00000000000000007735a31a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/78d776/00000000000000007735a31a/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/78d776/00000000000000007735a31a/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+    }
+
+    @font-face {
+      font-family:"rig-solid-bold-fill";
+      src:url("https://use.typekit.net/af/932505/00000000000000007735bf40/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/932505/00000000000000007735bf40/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/932505/00000000000000007735bf40/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+      font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+      }  
 
   html {
     position: fixed;
@@ -1458,6 +1475,7 @@ const globalStyles = css`
     overflow: hidden;
   }
 
+  
   body {
     margin: 0;
     width: 100vw;
@@ -1587,8 +1605,8 @@ const Container$2 = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: "Quicksand", sans-serif;
-  font-size: 27px;
+  font-family: rig-solid-bold-fill, sans-serif;
+  font-size: 20px;
   @media screen and (max-width: 500px) {
     font-size: 24px;
   }
@@ -1647,7 +1665,9 @@ const Container$1 = styled.div`
   align-items: center;
   opacity: ${props => props.paused ? 1 : 0};
   pointer-events: ${props => props.paused ? "all" : "none"};
-  font-family: "Quicksand", sans-serif;
+  font-family: rig-solid-bold-fill, sans-serif;
+  font-weight: 400;
+  font-style: normal; 
   font-size: 27px;
   @media screen and (max-width: 500px) {
     font-size: 24px;
@@ -1687,7 +1707,7 @@ const Continue = styled.div`
   cursor: pointer;
   text-align: center;
   font-size: 1.3em;
-  font-family: "Quicksand", sans-serif;
+  font-family: rig-solid-bold-fill, sans-serif;
   transition: opacity 0.15s linear;
   margin-top: 20px;
   background: ${props => props.color};
@@ -1841,7 +1861,7 @@ function PauseMenu(props) {
   const {
     title = "spacesvr",
     title2 = "jmangoes",
-    subTitle = "Game designer , artist, developer",
+    subTitle = "Game designer, artist, developer",
     pauseMenuItems = [],
     dev = false
   } = props;
