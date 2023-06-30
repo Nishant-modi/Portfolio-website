@@ -1861,7 +1861,7 @@ function PauseMenu(props) {
   const {
     title = "spacesvr",
     title2 = "jmangoes",
-    subTitle = "Game designer , artist, developer",
+    subTitle = "Game designer, artist, developer",
     pauseMenuItems = [],
     dev = false
   } = props;

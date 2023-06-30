@@ -45,11 +45,35 @@ export default function Starter() {
       </Collidable >
       
 
-      <Interactable onClick={() => window.open("https://www.google.com",'_blank')} onHover={()=> console.log("Hovered")} onUnHover={()=> console.log("Unhovered")}>
-
-      <Video src="./Mirrors_Banner.mp4" size={12.1} position = {[-97.13, 7, 13.4]} rotation-y={(Math.PI)+0.153} framed frameWidth={1} />
-
+      <Interactable onClick={() => window.open("https://www.google.com",'_blank')}>
+      <Video src="./Mirrors_Banner.mp4" size={12.1} position = {[-86.2, 6, 11.65]} rotation-y={(Math.PI)+0.153} framed frameWidth={1} /> {/*left first banner*/}
       </Interactable>
+
+      <Interactable onClick={() => window.open("https://www.google.com",'_blank')}>
+      <Video src="./Mirrors_Banner.mp4" size={12.1} position = {[-97.65, 6, 13.4]} rotation-y={(Math.PI)+0.153} framed frameWidth={1} />  {/*left middle banner*/}
+      </Interactable>
+
+      <Interactable onClick={() => window.open("https://www.google.com",'_blank')}>
+      <Video src="./Mirrors_Banner.mp4" size={12.1} position = {[-109.23, 6, 15.2]} rotation-y={(Math.PI)+0.153} framed frameWidth={1} /> {/*left last banner*/}
+      </Interactable>
+
+      <Interactable onClick={() => window.open("https://www.google.com",'_blank')}>
+      <Video src="./Mirrors_Banner.mp4" size={12.1} position = {[-90.25, 6, -15.3]} rotation-y={0.153} framed frameWidth={1} /> {/*right first banner*/}
+      </Interactable>
+
+      <Interactable onClick={() => window.open("https://www.google.com",'_blank')}>
+      <Video src="./Mirrors_Banner.mp4" size={12.1} position = {[-101.75, 6, -13.4]} rotation-y={0.153} framed frameWidth={1} /> {/*right middle banner*/}
+      </Interactable>
+
+      <Interactable onClick={() => window.open("https://www.google.com",'_blank')}>
+      <Video src="./Mirrors_Banner.mp4" size={12.1} position = {[-113.35, 6, -11.75]} rotation-y={0.153} framed frameWidth={1} /> {/*right last banner*/}
+      </Interactable>
+
+
+
+
+
+
       <Fog color = "black" near = {0.1} far = {500}/>
       <HDRI src = "./Skyhdr3.hdr" rotation-z = {Math.PI/2} rotation-y = {Math.PI} /> 
       {/*<TransparentFloor opacity={0.1} />*/}
