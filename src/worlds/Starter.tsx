@@ -13,7 +13,7 @@ import {Box, Icosahedron, Sky, shaderMaterial} from "@react-three/drei";
 
 export default function Starter() {
   return (
-    <StandardReality environmentProps={{pauseMenu : null}}>
+    <StandardReality playerProps= {{pos : [-45,1,65] , speed : 8}} environmentProps={{pauseMenu : null}}>
       {/*<ambientLight intensity = {0} />
       {/*<Model scale = {0.007} rotation-x = {-Math.PI/2} position-y = {0.01} src = "./vrShowcaseGlassFixed.glb"/>
       <Model scale = {0.01} position-y = {0.7} src = "./product.glb"/>
