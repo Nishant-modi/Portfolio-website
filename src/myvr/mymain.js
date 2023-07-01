@@ -1469,6 +1469,12 @@ const globalStyles = css`
       font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
       }  
 
+      @font-face {
+        font-family:"sketchnote-text";
+        src:url("https://use.typekit.net/af/25ce4b/00000000000000007735a30e/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/25ce4b/00000000000000007735a30e/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/25ce4b/00000000000000007735a30e/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+        font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+        }
+
   html {
     position: fixed;
     height: 100%;
@@ -1605,7 +1611,7 @@ const Container$2 = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: rig-solid-bold-fill, sans-serif;
+  font-family: sketchnote-text, sans-serif;
   font-size: 20px;
   @media screen and (max-width: 500px) {
     font-size: 24px;
@@ -1665,8 +1671,7 @@ const Container$1 = styled.div`
   align-items: center;
   opacity: ${props => props.paused ? 1 : 0};
   pointer-events: ${props => props.paused ? "all" : "none"};
-  font-family: rig-solid-bold-fill, sans-serif;
-  font-weight: 400;
+  font-family: sketchnote-text, sans-serif;
   font-style: normal; 
   font-size: 27px;
   @media screen and (max-width: 500px) {
