@@ -1469,6 +1469,12 @@ const globalStyles = css`
       font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
       }  
 
+      @font-face {
+        font-family:"sketchnote-text";
+        src:url("https://use.typekit.net/af/25ce4b/00000000000000007735a30e/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/25ce4b/00000000000000007735a30e/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/25ce4b/00000000000000007735a30e/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+        font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+        }
+
   html {
     position: fixed;
     height: 100%;
@@ -1605,7 +1611,7 @@ const Container$2 = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: rig-solid-bold-fill, sans-serif;
+  font-family: sketchnote-text, sans-serif;
   font-size: 20px;
   @media screen and (max-width: 500px) {
     font-size: 24px;
@@ -1614,6 +1620,30 @@ const Container$2 = styled.div`
 const Text$1 = styled.div`
   animation: ${float} 7s ease-in-out infinite;
 `;
+
+const TextWhat = styled.div`
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 11;
+background: rgba(0,0,0,0);
+transition: opacity 0.75s ease-in;
+transition-delay: 0.5s;
+opacity: ${props => props.finished ? "0" : "1"};
+pointer-events: ${props => props.finished ? "none" : "all"};
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+font-family: sketchnote-text, sans-serif;
+font-size: 10px;
+@media screen and (max-width: 500px) {
+  font-size: 24px;
+}
+`;
+
 const Wrapper$1 = styled.div`
   position: relative;
 
@@ -1665,8 +1695,7 @@ const Container$1 = styled.div`
   align-items: center;
   opacity: ${props => props.paused ? 1 : 0};
   pointer-events: ${props => props.paused ? "all" : "none"};
-  font-family: rig-solid-bold-fill, sans-serif;
-  font-weight: 400;
+  font-family: sketchnote-text, sans-serif;
   font-style: normal; 
   font-size: 27px;
   @media screen and (max-width: 500px) {
