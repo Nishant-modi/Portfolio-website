@@ -16,10 +16,11 @@ function Effects() {
   return (
     <EffectComposer>
       <DotScreen
-        blendFunction={BlendFunction.SOFT_LIGHT}
+        blendFunction={BlendFunction.NORMAL}
         angle={Math.PI * 0.5}
-        scale={1}
+        scale={5}
         opacity = {0.1}
+
       />
     </EffectComposer>
   );
@@ -28,6 +29,7 @@ function Effects() {
 
 export default function Starter() {
   return (
+    
     <StandardReality playerProps= {{pos : [-45,1,65] , speed : 6}} environmentProps={{pauseMenu : null}}>
       {/*<ambientLight intensity = {0} />
       {/*<Model scale = {0.007} rotation-x = {-Math.PI/2} position-y = {0.01} src = "./vrShowcaseGlassFixed.glb"/>
@@ -94,13 +96,10 @@ export default function Starter() {
       </Interactable>
 
       
-      <Suspense fallback={null}>
-      <Effects />
-      </Suspense>
+      <Effects/>
 
 
-
-      <Fog color = "#2C1A10" near = {0.1} far = {80}/>
+      {/*<Fog color = "#2C1A10" near = {0.1} far = {80}/>*/}
       <HDRI src = "./Skyhdr4.hdr" rotation-z = {Math.PI/2} rotation-y = {Math.PI} /> 
       {/*<TransparentFloor opacity={0.1} />*/}
       
