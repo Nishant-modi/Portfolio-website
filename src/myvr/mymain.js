@@ -1620,6 +1620,30 @@ const Container$2 = styled.div`
 const Text$1 = styled.div`
   animation: ${float} 7s ease-in-out infinite;
 `;
+
+const TextWhat = styled.div`
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 11;
+background: rgba(0,0,0,0);
+transition: opacity 0.75s ease-in;
+transition-delay: 0.5s;
+opacity: ${props => props.finished ? "0" : "1"};
+pointer-events: ${props => props.finished ? "none" : "all"};
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+font-family: sketchnote-text, sans-serif;
+font-size: 10px;
+@media screen and (max-width: 500px) {
+  font-size: 24px;
+}
+`;
+
 const Wrapper$1 = styled.div`
   position: relative;
 
