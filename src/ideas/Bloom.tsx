@@ -49,7 +49,7 @@ export default function Bloom() {
   return (
     <VisualEffect index={1}>
       
-      <unrealBloomPass args={[res, 2, 1, 0.95]} />
+      <unrealBloomPass args={[res, 1, 1, 0.95]} />
       <dotScreenPass args={[res, 1, 2]} />
       {/*<halftonePass args = {[1,1,params]}/>*/}
     </VisualEffect>

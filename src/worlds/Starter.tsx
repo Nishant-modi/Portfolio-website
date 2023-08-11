@@ -39,13 +39,13 @@ export default function Starter() {
     
     <StandardReality playerProps= {{pos : [-45,1,65] , speed : 6}} environmentProps={{pauseMenu : null}} shadowMap>
       <Bloom/>
-      <ambientLight intensity = {0.3} />
-      <pointLight intensity = {1} position={[10, 10, 11]} />
+      <ambientLight intensity = {0} />
+      <pointLight intensity = {0} position={[10, 10, 11]} />
       
-      <directionalLight intensity = {2} castShadow position={[1, 1, 1]} shadow-mapSize={[1024, 1024]}>
-      <orthographicCamera attach="shadow-camera" args={[-10, 10, 10, -10]} />
-  </directionalLight>
-
+      
+      <directionalLight intensity = {3} castShadow position={[1, 0.3, 0]} shadow-mapSize={[1024, 1024]}>
+          <orthographicCamera attach="shadow-camera" args={[-10, 10, 10, -10]} />
+      </directionalLight>
   
       
 
@@ -58,6 +58,8 @@ export default function Starter() {
         opacity = {0.2}
       />
     </EffectComposer>
+
+    
 
     <VisualEffect index={0}>
     <UnrealBloomPass args={[new Vector2(256, 256), 0.1, 0.01, 0.95]} />
