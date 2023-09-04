@@ -1,5 +1,5 @@
-import { Spinning, Floating,Model, Fog, HDRI, EnvironmentProps, PlayerProps, Player, useEnvironment, useKeyboardLayout, Idea, MenuItem, Video, Image, Interactable, VisualEffect, Collidable} from "spacesvr";
-import {StandardReality} from "myvr/mymain.js";
+import { Spinning, Floating,Model, Fog, HDRI, EnvironmentProps, PlayerProps, Player, useEnvironment, useKeyboardLayout, Idea, MenuItem, Video, Image, Interactable, VisualEffect, Collidable, StandardReality} from "spacesvr";
+//import {StandardReality} from "myvr/mymain.js";
 import TransparentFloor from "ideas/TransparentFloor";
 import CloudySky from "ideas/CloudySky";
 import React, {Suspense, useRef, useState} from 'react';
@@ -39,8 +39,8 @@ export default function Starter() {
     
     
      <StandardReality>
-      {/* <StandardReality playerProps= {{pos : [-45,1,65] , speed : 6}} environmentProps={{pauseMenu : null}} shadowMap> */}
-      <Bloom/>
+      {/* <StandardReality playerProps= {{pos : [-45,1,65] , speed : 6}} environmentProps={{pauseMenu : null}} shadowMap> 
+      <Bloom/>*/}
       <ambientLight intensity = {0} />
       <pointLight intensity = {0} position={[10, 10, 11]} />
       
@@ -98,9 +98,9 @@ export default function Starter() {
       </Collidable >
       */}
       
-      <Model scale = {0.3} position-y = {-1.7} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Floor.glb"/>
-      <Model scale = {0.3} position-y = {-1.7} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Mountains.glb"/>
-      <Model scale = {0.3} position-y = {-1.7} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Forest-v1.glb"/>
+      <Model scale = {0.2} position-y = {-1.7} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Floor.glb"/>
+      <Model scale = {0.2} position-y = {-1.7} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Mountains.glb"/>
+      <Model scale = {0.2} position-y = {-1.7} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Forest-v1.glb"/>
       
 
       {/*<Interactable onClick={() => window.open("https://jmangoes.itch.io/mirrors",'_blank')}>
