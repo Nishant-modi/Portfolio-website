@@ -1446,34 +1446,11 @@ const Container$3 = styled.div`
   }
 `;
 
-
-
 const globalStyles = css`
-
-@import url("https://use.typekit.net/eqf0dzv.css");
-
   @font-face {
     font-family: "Quicksand";
     src: url("https://d27rt3a60hh1lx.cloudfront.net/fonts/Quicksand_Bold.otf");
   }
-
-  @font-face {
-    font-family:"sketchnote-square";
-    src:url("https://use.typekit.net/af/78d776/00000000000000007735a31a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/78d776/00000000000000007735a31a/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/78d776/00000000000000007735a31a/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-    font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
-    }
-
-    @font-face {
-      font-family:"rig-solid-bold-fill";
-      src:url("https://use.typekit.net/af/932505/00000000000000007735bf40/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/932505/00000000000000007735bf40/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/932505/00000000000000007735bf40/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
-      font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
-      }  
-
-      @font-face {
-        font-family:"sketchnote-text";
-        src:url("https://use.typekit.net/af/25ce4b/00000000000000007735a30e/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/25ce4b/00000000000000007735a30e/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/25ce4b/00000000000000007735a30e/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-        font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
-        }
 
   html {
     position: fixed;
@@ -1481,7 +1458,6 @@ const globalStyles = css`
     overflow: hidden;
   }
 
-  
   body {
     margin: 0;
     width: 100vw;
@@ -1611,8 +1587,8 @@ const Container$2 = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: sketchnote-text, sans-serif;
-  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 27px;
   @media screen and (max-width: 500px) {
     font-size: 24px;
   }
@@ -1620,30 +1596,6 @@ const Container$2 = styled.div`
 const Text$1 = styled.div`
   animation: ${float} 7s ease-in-out infinite;
 `;
-
-const TextWhat = styled.div`
-width: 100%;
-height: 100%;
-position: absolute;
-top: 0;
-left: 0;
-z-index: 11;
-background: rgba(0,0,0,0);
-transition: opacity 0.75s ease-in;
-transition-delay: 0.5s;
-opacity: ${props => props.finished ? "0" : "1"};
-pointer-events: ${props => props.finished ? "none" : "all"};
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-font-family: sketchnote-text, sans-serif;
-font-size: 10px;
-@media screen and (max-width: 500px) {
-  font-size: 24px;
-}
-`;
-
 const Wrapper$1 = styled.div`
   position: relative;
 
@@ -1695,8 +1647,7 @@ const Container$1 = styled.div`
   align-items: center;
   opacity: ${props => props.paused ? 1 : 0};
   pointer-events: ${props => props.paused ? "all" : "none"};
-  font-family: sketchnote-text, sans-serif;
-  font-style: normal; 
+  font-family: "Quicksand", sans-serif;
   font-size: 27px;
   @media screen and (max-width: 500px) {
     font-size: 24px;
@@ -1736,7 +1687,7 @@ const Continue = styled.div`
   cursor: pointer;
   text-align: center;
   font-size: 1.3em;
-  font-family: rig-solid-bold-fill, sans-serif;
+  font-family: "Quicksand", sans-serif;
   transition: opacity 0.15s linear;
   margin-top: 20px;
   background: ${props => props.color};
@@ -1798,21 +1749,6 @@ const MenuLink = styled.a`
 `;
 const Title = styled.h1`
   margin: 0;
-`;
-
-const SubTitle = styled.div`
-width: 100%;
-height: auto;
-margin: 30px 0;
-font-size: 0.7em;
-text-align: center;
-display: flex;
-flex-direction: column;
-justify-content: center;
-
-& > p {
-  margin: 0.2em;
-}
 `;
 const Actions = styled.div`
   width: 100%;
@@ -1889,8 +1825,6 @@ const useEnvironmentState = name => {
 function PauseMenu(props) {
   const {
     title = "spacesvr",
-    title2 = "jmangoes",
-    subTitle = "Game designer, artist, developer",
     pauseMenuItems = [],
     dev = false
   } = props;
@@ -1907,11 +1841,7 @@ function PauseMenu(props) {
   }, [menuItems, setPaused]);
   const hex = useMemo(() => new Idea().setFromCreation(Math.random(), 0.8, 0.95).getHex(), []);
   const PAUSE_ITEMS = [...pauseMenuItems, {
-    text: "github",
-    link: "https://www.npmjs.com/package/spacesvr"
-  },
-  {
-    text: "itch",
+    text: "v2.12.2",
     link: "https://www.npmjs.com/package/spacesvr"
   }, ...menuItems];
   return /*#__PURE__*/React.createElement(Container$1, {
@@ -1919,7 +1849,7 @@ function PauseMenu(props) {
     dev: dev
   }, /*#__PURE__*/React.createElement(ClickContainer, {
     onClick: closeOverlay
-  }), !dev && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(Window, null, /*#__PURE__*/React.createElement(Title, null, title2), /*#__PURE__*/React.createElement(SubTitle, null, subTitle), /*#__PURE__*/React.createElement(Instructions, null, /*#__PURE__*/React.createElement("p", null, "Move \u2013 ", device.mobile ? "Joystick" : layout), /*#__PURE__*/React.createElement("p", null, "Look \u2013 ", device.mobile ? "Drag" : "Mouse"), /*#__PURE__*/React.createElement("p", null, "Pause \u2013 ", device.mobile ? "Menu Button" : "Esc"), /*#__PURE__*/React.createElement("p", null, "Cycle Tool \u2013 ", device.mobile ? "Edge Swipe" : "Tab")), /*#__PURE__*/React.createElement(Actions, null, PAUSE_ITEMS.map(item => item.link ? /*#__PURE__*/React.createElement(MenuLink, {
+  }), !dev && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(Window, null, /*#__PURE__*/React.createElement(Title, null, title), /*#__PURE__*/React.createElement(Instructions, null, /*#__PURE__*/React.createElement("p", null, "Move \u2013 ", device.mobile ? "Joystick" : layout), /*#__PURE__*/React.createElement("p", null, "Look \u2013 ", device.mobile ? "Drag" : "Mouse"), /*#__PURE__*/React.createElement("p", null, "Pause \u2013 ", device.mobile ? "Menu Button" : "Esc"), /*#__PURE__*/React.createElement("p", null, "Cycle Tool \u2013 ", device.mobile ? "Edge Swipe" : "Tab")), /*#__PURE__*/React.createElement(Actions, null, PAUSE_ITEMS.map(item => item.link ? /*#__PURE__*/React.createElement(MenuLink, {
     key: item.text,
     href: item.link,
     target: "_blank"
@@ -2924,7 +2854,7 @@ const useBob = (velocity, direction) => {
 
 const PlayerContext = /*#__PURE__*/createContext({});
 const usePlayer = () => useContext(PlayerContext);
-const SPEED = 7; // (m/s) 1.4 walking, 2.6 jogging, 4.1 running
+const SPEED = 3.6; // (m/s) 1.4 walking, 2.6 jogging, 4.1 running
 
 const SHOW_PLAYER_HITBOX = false;
 
@@ -2989,12 +2919,6 @@ function Player(props) {
       raycaster.ray.direction.applyQuaternion(camera.quaternion);
     }
 
-    if (device.mobile) {
-    raycaster.ray.origin.default;
-    raycaster.ray.direction.set(0, 0, -1);
-    raycaster.ray.direction.applyQuaternion(camera.quaternion);
-    }
-
     camera.position.copy(position.current);
 
     if (!lockControls.current) {
@@ -3022,8 +2946,8 @@ function Player(props) {
       get: () => velocity.current.clone(),
       set: setVelocity
     },
-    raycaster: device.desktop ? raycaster : defaultRaycaster,
-    controls: controlLock
+    controls: controlLock,
+    raycaster: device.mobile ? defaultRaycaster : raycaster
   };
   return /*#__PURE__*/React.createElement(PlayerContext.Provider, {
     value: value
@@ -9039,4 +8963,4 @@ function LostWorld() {
   }), /*#__PURE__*/React.createElement(LostFloor, null));
 }
 
-export { Anchor, Arrow, Audio$1 as Audio, Background$1 as Background, Button$1 as Button, Camera, Collidable, Dialogue, Environment, EnvironmentContext, FacePlayer, Floating, Fog, Frame, HDRI, HitBox, Idea, Image$1 as Image, InfinitePlane, Interactable, Key, LookAtPlayer, LostFloor, LostWorld, Model, Network, NetworkContext, Physics, Player, PlayerContext, RoundedBox, Site, Spinning, StandardReality, Switch, TextInput, Tool, Toolbelt, ToolbeltContext, Video, Visual, VisualContext, VisualEffect, VisualIdea, VisualWorld, WalkieTalkie, World, cache, enableBVHRaycast, getHudDims, getHudPos, isTyping, useDrag, useEnvironment, useEnvironmentState, useHTMLInput, useHudDims, useImage, useKeyboardLayout, useKeypress, useLimitedFrame, useLimiter, useMetaHold, useModel, useNetwork, usePlayer, useRerender, useShiftHold, useTextInput, useToolbelt, useToolbeltState, useTrimeshCollision$1 as useTrimeshCollision, useVisible, useVisual };
+export { Anchor, Arrow, Audio$1 as Audio, Background$1 as Background, Button$1 as Button, Camera, Collidable, Dialogue, Environment, EnvironmentContext, FacePlayer, Floating, Fog, Frame, HDRI, HitBox, Idea, Image$1 as Image, InfinitePlane, Interactable, Key, LookAtPlayer, LostFloor, LostWorld, Model, Network, NetworkContext, Physics, Player, PlayerContext, RoundedBox, Site, Spinning, StandardReality, Switch, TextInput, Tool, Toolbelt, ToolbeltContext, Video, Visual, VisualContext, VisualEffect, VisualIdea, VisualWorld, WalkieTalkie, World, cache, enableBVHRaycast, getHudDims, getHudPos, isTyping, useDrag, useEnvironment, useEnvironmentState, useHTMLInput, useHudDims, useImage, useKeyboardLayout, useKeypress, useLimitedFrame, useLimiter, useMetaHold, useModel, useNetwork, usePlayer, useRerender, useShiftHold, useTextInput, useToolbelt, useToolbeltState, useTrimeshCollision$1 as useTrimeshCollision, useVisible, useVisual, PauseMenu};
