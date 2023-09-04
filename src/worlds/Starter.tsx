@@ -37,8 +37,9 @@ function Effects() {
 export default function Starter() {
   return (
     
-    <StandardReality playerProps= {{pos : [-45,1,65] , speed : 6}} environmentProps={{pauseMenu : null}} shadowMap>
-      {/*shadowMap*/}
+    
+     <StandardReality>
+      {/* <StandardReality playerProps= {{pos : [-45,1,65] , speed : 6}} environmentProps={{pauseMenu : null}} shadowMap> */}
       <Bloom/>
       <ambientLight intensity = {0} />
       <pointLight intensity = {0} position={[10, 10, 11]} />
@@ -147,5 +148,6 @@ export default function Starter() {
       
       
     </StandardReality>
+    
   );
 }
