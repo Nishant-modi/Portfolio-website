@@ -1,5 +1,5 @@
-import { Spinning, Floating,Model, Fog, HDRI, EnvironmentProps, PlayerProps, Player, useEnvironment, useKeyboardLayout, Idea, MenuItem, Video, Image, Interactable, VisualEffect, Collidable, StandardReality} from "spacesvr";
-//import {StandardReality} from "myvr/mymain.js";
+import { Spinning, Floating,Model, Fog, HDRI, EnvironmentProps, PlayerProps, Player, useEnvironment, useKeyboardLayout, Idea, MenuItem, Video, Image, Interactable, VisualEffect, Collidable} from "spacesvr";
+import {StandardReality} from "myvr/mymain.js";
 import TransparentFloor from "ideas/TransparentFloor";
 import CloudySky from "ideas/CloudySky";
 import React, {Suspense, useRef, useState} from 'react';
