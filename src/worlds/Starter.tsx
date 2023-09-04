@@ -1,5 +1,5 @@
-import { Spinning, Floating,Model, Fog, HDRI, EnvironmentProps, PlayerProps, Player, useEnvironment, useKeyboardLayout, Idea, MenuItem, Video, Image, Interactable, VisualEffect, Collidable} from "spacesvr";
-import {StandardReality} from "myvr/mymain.js";
+import { Spinning, Floating,Model, Fog, HDRI, EnvironmentProps, PlayerProps, Player, useEnvironment, useKeyboardLayout, Idea, MenuItem, Video, Image, Interactable, VisualEffect, Collidable, StandardReality} from "spacesvr";
+//import {StandardReality} from "myvr/mymain.js";
 import TransparentFloor from "ideas/TransparentFloor";
 import CloudySky from "ideas/CloudySky";
 import React, {Suspense, useRef, useState} from 'react';
@@ -38,9 +38,11 @@ export default function Starter() {
   return (
     
     
-     <StandardReality>
-      {/* <StandardReality playerProps= {{pos : [-45,1,65] , speed : 6}} environmentProps={{pauseMenu : null}} shadowMap> 
-      <Bloom/>*/}
+     
+      <StandardReality environmentProps={{pauseMenu : null}}> 
+      {/*<StandardReality>*/}
+      <Bloom/>
+      <Bloom/>
       <ambientLight intensity = {0} />
       <pointLight intensity = {0} position={[10, 10, 11]} />
       

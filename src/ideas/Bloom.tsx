@@ -1,4 +1,5 @@
-import { VisualEffect } from "myvr/mymain.js";
+//import { VisualEffect } from "myvr/mymain.js";
+import { VisualEffect } from "spacesvr";
 import { UnrealBloomPass, DotScreenPass, HalftonePass, HalftoneShader} from "three-stdlib";
 import { extend, ReactThreeFiber } from "@react-three/fiber";
 
