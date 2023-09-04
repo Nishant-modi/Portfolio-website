@@ -3,7 +3,7 @@ import {StandardReality, Interactable, VisualEffect, Collidable} from "myvr/myma
 import TransparentFloor from "ideas/TransparentFloor";
 import CloudySky from "ideas/CloudySky";
 import React, {Suspense, useRef, useState} from 'react';
-import THREE, { IcosahedronGeometry, Vector2} from 'three';
+import THREE, { IcosahedronGeometry} from 'three';
 import { EffectComposer, DotScreen, LensFlare} from "@react-three/postprocessing";
 import { BlendFunction} from "postprocessing";
 //import {DotScreenPass} from "three/examples/jsm/postprocessing/DotScreenPass";
@@ -81,7 +81,7 @@ export default function Starter() {
 
       <pointLight intensity = {1} position={[10, 10, 11]} />
       
-      <Model scale = {0.5} position-y = {-1} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Final2.glb"/>*/}
+      <Model scale = {0.5} position-y = {-1} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Final2.glb"/>
 
       <Collidable triLimit={10000} enabled={true} hideCollisionMeshes={false}>
       <Model scale = {0.5} position-y = {-1.7} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/BeamLines.glb"/>
@@ -94,11 +94,15 @@ export default function Starter() {
       <Model castShadow scale = {0.5} position-y = {-1} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Hall.glb"/>
       <Model scale = {0.5} position-y = {-1} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Banners.glb"/>
       </Collidable >
+      */}
       
+      <Model scale = {0.3} position-y = {-1.7} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Floor.glb"/>
+      <Model scale = {0.3} position-y = {-1.7} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Mountains.glb"/>
+      <Model scale = {0.3} position-y = {-1.7} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Forest-v1.glb"/>
       
 
-      <Interactable onClick={() => window.open("https://jmangoes.itch.io/mirrors",'_blank')}>
-      <Video src="./Banners/Green_Screen.mp4" size={12.1} position = {[-86.2, 6, 11.65]} rotation-y={(Math.PI)+0.153} framed frameWidth={1} /> {/*left first banner */}
+      {/*<Interactable onClick={() => window.open("https://jmangoes.itch.io/mirrors",'_blank')}>
+      <Video src="./Banners/Green_Screen.mp4" size={12.1} position = {[-86.2, 6, 11.65]} rotation-y={(Math.PI)+0.153} framed frameWidth={1} /> {/*left first banner
 
 
       <Model scale = {0.5} position = {[-101, -1 , 0]} rotation-y={(Math.PI/2)+0.153} src = "./Models/Buttons/Button_LF.glb"/>
@@ -106,31 +110,32 @@ export default function Starter() {
       </Interactable>
 
       <Interactable onClick={() => window.open("https://www.facebook.com",'_blank')}>
-      <Video src="./Banners/Green_Screen.mp4" size={12.1} position = {[-97.65, 6, 13.4]} rotation-y={(Math.PI)+0.153} framed frameWidth={1} />  {/*left middle banner*/}
+      <Video src="./Banners/Green_Screen.mp4" size={12.1} position = {[-97.65, 6, 13.4]} rotation-y={(Math.PI)+0.153} framed frameWidth={1} />  {/*left middle banner
       <Model scale = {0.5} position = {[-100.7, -1 , 0]} rotation-y={(Math.PI/2)+0.153} src = "./Models/Buttons/Button_LM.glb"/>
       </Interactable>
 
       <Interactable onClick={() => window.open("https://www.google.com",'_blank')}>
-      <Video src="./Banners/Website_Banner.mp4" size={12.1} position = {[-109.23, 6, 15.2]} rotation-y={(Math.PI)+0.153} framed frameWidth={1} /> {/*left last banner*/}
+      <Video src="./Banners/Website_Banner.mp4" size={12.1} position = {[-109.23, 6, 15.2]} rotation-y={(Math.PI)+0.153} framed frameWidth={1} /> {/*left last banner
       <Model scale = {0.5} position = {[-100.5, -1 , 0]} rotation-y={(Math.PI/2)+0.153} src = "./Models/Buttons/Button_LL.glb"/>
       </Interactable>
 
       <Interactable onClick={() => window.open("https://jmangoes.itch.io/mirrors",'_blank')}>
-      <Video src="./Banners/Mirrors_Banner2.gif" size={12.1} position = {[-90.25, 6, -15.3]} rotation-y={0.153} framed frameWidth={1} /> {/*right first banner*/}
+      <Video src="./Banners/Mirrors_Banner2.gif" size={12.1} position = {[-90.25, 6, -15.3]} rotation-y={0.153} framed frameWidth={1} /> {/*right first banner
 
       <Image src = "./Banners/Mirrors_Banner2.gif" size={12.1} position = {[-90.25, 6, -15.3]} rotation-y={0.153}/>
       <Model scale = {0.5} position = {[-101, -1 , 0]} rotation-y={(Math.PI/2)+0.153} src = "./Models/Buttons/Button_RF.glb"/>
       </Interactable>
 
       <Interactable onClick={() => window.open("https://jmangoes.itch.io/rock-my-boat",'_blank')}>
-      <Video src="./Banners/Rockmyboat_Banner.mp4" size={12.1} position = {[-101.75, 6, -13.4]} rotation-y={0.153} framed frameWidth={1} /> {/*right middle banner*/}
+      <Video src="./Banners/Rockmyboat_Banner.mp4" size={12.1} position = {[-101.75, 6, -13.4]} rotation-y={0.153} framed frameWidth={1} /> {/*right middle banner
       <Model scale = {0.5} position = {[-100.7, -1 , 0]} rotation-y={(Math.PI/2)+0.153} src = "./Models/Buttons/Button_RM.glb"/>
       </Interactable>
 
       <Interactable onClick={() => window.open("https://jumping_mangoes.artstation.com/",'_blank')}>
-      <Video src="./Banners/Artworks_Banner.mp4" size={12.1} position = {[-113.35, 6, -11.75]} rotation-y={0.153} framed frameWidth={1} /> {/*right last banner*/}
+      <Video src="./Banners/Artworks_Banner.mp4" size={12.1} position = {[-113.35, 6, -11.75]} rotation-y={0.153} framed frameWidth={1} /> {/*right last banner
       <Model scale = {0.5} position = {[-100.5, -1 , 0]} rotation-y={(Math.PI/2)+0.153} src = "./Models/Buttons/Button_RL.glb"/>
       </Interactable>
+      */}
 
       
       
