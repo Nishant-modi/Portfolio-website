@@ -35,8 +35,6 @@
     "glslify": "^7.1.1",
     "prettier": "^2.2.1",
     "typescript": "4.7.3"
-  },
-  "resolutions": {
-    "spacesvr/**/@react-three/fiber": "6.0.14"
   }
+
 }
