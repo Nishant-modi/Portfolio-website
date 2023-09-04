@@ -1,5 +1,7 @@
-import { Spinning, Floating,Model, Fog, HDRI, EnvironmentProps, PlayerProps, Player, useEnvironment, useKeyboardLayout, Idea, MenuItem, Video, Image, Interactable, VisualEffect, Collidable, StandardReality} from "spacesvr";
+import { Spinning, Floating,Model, Fog, HDRI, PlayerProps, Player, useEnvironment, useKeyboardLayout, Idea, MenuItem, Video, Image, Interactable, VisualEffect, Collidable, StandardReality} from "spacesvr";
+//import {PauseMenu} from "worlds/PauseMenu.js"; 
 //import {StandardReality} from "myvr/mymain.js";
+//import{PauseMenu} from "spacesvr/main.js";
 import TransparentFloor from "ideas/TransparentFloor";
 import CloudySky from "ideas/CloudySky";
 import React, {Suspense, useRef, useState} from 'react';
@@ -38,10 +40,8 @@ export default function Starter() {
   return (
     
     
-     
-      <StandardReality environmentProps={{pauseMenu : null}}> 
-      {/*<StandardReality>*/}
-      <Bloom/>
+    <StandardReality environmentProps={{name:"jmangoes"}}> 
+    {/*<StandardReality>  */}
       <Bloom/>
       <ambientLight intensity = {0} />
       <pointLight intensity = {0} position={[10, 10, 11]} />
@@ -100,10 +100,22 @@ export default function Starter() {
       </Collidable >
       */}
       
-      <Model scale = {0.2} position-y = {-1.7} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Floor.glb"/>
-      <Model scale = {0.2} position-y = {-1.7} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Mountains.glb"/>
-      <Model scale = {0.2} position-y = {-1.7} position-x = {-100} rotation-y={(Math.PI/2)+0.153} src = "./Models/Forest-v1.glb"/>
-      
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(Math.PI/2)+0.153} src = "./Models/Floor.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(Math.PI/2)+0.153} src = "./Models/Mountains.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(Math.PI/2)+0.153} src = "./Models/Trees/tree 1.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(Math.PI/2)+0.153} src = "./Models/Trees/tree 2.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(Math.PI/2)+0.153} src = "./Models/Trees/tree 3.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(Math.PI/2)+0.153} src = "./Models/Trees/tree 4.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(Math.PI/2)+0.153} src = "./Models/Trees/tree 5.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(Math.PI/2)+0.153} src = "./Models/Trees/tree 6.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(Math.PI/2)+0.153} src = "./Models/Trees/tree 7.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(Math.PI/2)+0.153} src = "./Models/Trees/tree 8.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(Math.PI/2)+0.153} src = "./Models/Trees/tree 9.glb"/>
+      <Model scale = {0.4} position-y = {-1.7} position-x = {0} rotation-y={(Math.PI/2)+0.153} src = "./Models/Beam.glb"/>
+      <Model scale = {0.4} position-y = {-1.7} position-x = {0} rotation-y={(Math.PI/2)+0.153} src = "./Models/SphereBeam.glb"/>
+      <Model scale = {0.4} position-y = {-1.7} position-x = {0} rotation-y={(Math.PI/2)+0.153} src = "./Models/MachineBase.glb"/>
+      <Model scale = {0.4} position-y = {-1.7} position-x = {0} rotation-y={(Math.PI/2)+0.153} src = "./Models/MainMachine.glb"/>
+      <Model scale = {0.4} position-y = {-1.7} position-x = {0} rotation-y={(Math.PI/2)+0.153} src = "./Models/Umbrella.glb"/>
 
       {/*<Interactable onClick={() => window.open("https://jmangoes.itch.io/mirrors",'_blank')}>
       <Video src="./Banners/Green_Screen.mp4" size={12.1} position = {[-86.2, 6, 11.65]} rotation-y={(Math.PI)+0.153} framed frameWidth={1} /> {/*left first banner
