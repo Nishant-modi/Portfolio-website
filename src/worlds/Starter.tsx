@@ -3,7 +3,7 @@ import {StandardReality} from "myvr/mymain.js";
 import TransparentFloor from "ideas/TransparentFloor";
 import CloudySky from "ideas/CloudySky";
 import React, {Suspense, useRef, useState} from 'react';
-import THREE, { IcosahedronGeometry, Vector2} from 'three';
+import THREE, { IcosahedronGeometry} from 'three';
 import { EffectComposer, DotScreen, LensFlare} from "@react-three/postprocessing";
 import { BlendFunction} from "postprocessing";
 //import {DotScreenPass} from "three/examples/jsm/postprocessing/DotScreenPass";
