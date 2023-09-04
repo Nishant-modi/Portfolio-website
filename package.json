@@ -11,10 +11,8 @@
   },
   "dependencies": {
     "@react-three/drei": "^9.76.0",
-    "@react-three/fiber": "^8.13.7",
+    "@react-three/fiber": "8.12.0",
     "@react-three/postprocessing": "^2.15.0",
-    "@react-three/xr": "5.4.1",
-    "@react-three/cannon": "6.4.0",
     "next": "^12.1.6",
     "postprocessing": "^6.32.2",
     "react": "^18.1.0",
@@ -37,5 +35,8 @@
     "glslify": "^7.1.1",
     "prettier": "^2.2.1",
     "typescript": "4.7.3"
+  },
+  "resolutions": {
+    "spacesvr/**/@react-three/fiber": "6.0.14"
   }
 }
