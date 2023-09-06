@@ -25,6 +25,7 @@ import { getCaretAtPoint, Text as Text$3 } from 'troika-three-text';
 import { SnapshotInterpolation } from '@geckos.io/snapshot-interpolation';
 import { Peer } from 'peerjs';
 import { useTransition } from '@react-spring/core';
+//import {menuItems} from "spacesvr";
 
 const vertHead$3 = `
     // Description : Array and textureless GLSL 2D/3D/4D simplex
