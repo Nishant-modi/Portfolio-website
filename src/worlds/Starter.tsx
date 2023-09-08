@@ -15,6 +15,7 @@ import { useFrame, useThree, useLoader, Canvas, createPortal as createPortal$1, 
 //import { Canvas } from 'react-three-fiber';
 import {Box, Center, Icosahedron, Sky, shaderMaterial} from "@react-three/drei";
 import Bloom from "../ideas/Bloom";
+//import { sync } from 'glob';
 
 //import glsl from 'glslify';
 
@@ -34,6 +35,13 @@ function Effects() {
     </EffectComposer>
   );
 }
+
+//const dirGlob = require('dir-glob');
+
+let trees: string[] = [];
+  for (let i = 1; i <= 45; i++) {
+    trees.push("./Models/Trees/tree"+i+".glb");
+  }
 
 
 export default function Starter() {
@@ -160,7 +168,7 @@ export default function Starter() {
 
 
 
-      {/*trees*/}
+      {/*trees
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Trees/tree1.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Trees/tree2.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Trees/tree3.glb"/>
@@ -173,10 +181,14 @@ export default function Starter() {
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Trees/tree10.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Trees/tree11.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Trees/tree12.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Trees/tree13.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Trees/tree13.glb"/>*/}
       
 
-
+      { 
+        trees.map(tree => (
+          <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = {tree}/>
+        ))
+        }
       
 
       {/*
