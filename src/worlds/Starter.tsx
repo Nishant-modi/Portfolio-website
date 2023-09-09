@@ -1,4 +1,4 @@
-import { Spinning, Floating,Model, Fog, HDRI, PlayerProps, Player, useEnvironment, useKeyboardLayout, Idea, MenuItem, Video, Image, Interactable, VisualEffect, Collidable, StandardReality, Camera} from "spacesvr";
+import { Spinning, Floating,Model, Fog, HDRI, PlayerProps, Player, useEnvironment, useKeyboardLayout, Idea, MenuItem, Video, Image, Interactable, VisualEffect, Collidable, StandardReality, Camera, Audio} from "spacesvr";
 //import {PauseMenu} from "worlds/PauseMenu.js"; 
 //import {PauseMenu} from "myvr/mymain.js";
 //import{PauseMenu} from "spacesvr/main.js";
@@ -58,8 +58,11 @@ export default function Starter() {
       <directionalLight intensity = {3} castShadow position={[1, 0.3, 0]} shadow-mapSize={[1024, 1024]}>
           <orthographicCamera attach="shadow-camera" args={[-10, 10, 10, -10]} />
       </directionalLight>
-  
+
+
       
+      <Audio url="./Audio/cricket.mp3" position = {[0,0,-100]} volume = {0.2} rollOff = {0}/>
+      <Audio url="./Audio/beam.mp3" position = {[0,1,-40]} volume = {1} rollOff = {1.3}/>
 
       {/*
       <EffectComposer>
@@ -124,43 +127,78 @@ export default function Starter() {
 
       {/*landing screen and buttons*/}
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Screen.glb"/>
+
+      <Interactable onClick={() => window.open("https://www.google.com",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/button1.glb"/>
+      </Interactable>
+      <Interactable onClick={() => window.open("https://www.behance.net/nishant_modi",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/button2.glb"/>
+      </Interactable>
+      <Interactable onClick={() => window.open("https://jmangoes.itch.io/",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/button3.glb"/>
+      </Interactable>
+      <Interactable onClick={() => window.open("https://github.com/Nishant-modi",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/button4.glb"/>
+      </Interactable>
 
       {/*project screens*/}
+      <Interactable onClick={() => window.open("https://www.behance.net/gallery/179602967/de_canopy_0_1",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/ProjectScreens/ProjectScreenL1.glb"/>
+      </Interactable>
+      <Interactable onClick={() => window.open("https://www.behance.net/gallery/179603239/jMangoes-Portfolio-Website",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/ProjectScreens/ProjectScreenL2.glb"/>
+      </Interactable>
+      <Interactable onClick={() => window.open("https://www.artstation.com/jumping_mangoes",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/ProjectScreens/ProjectScreenL3.glb"/>
+      </Interactable>
+      <Interactable onClick={() => window.open("https://www.behance.net/gallery/179602703/Players-Paradox",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/ProjectScreens/ProjectScreenR1.glb"/>
+      </Interactable>
+      <Interactable onClick={() => window.open("https://www.behance.net/gallery/179602263/Mirrors20",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/ProjectScreens/ProjectScreenR2.glb"/>
+      </Interactable>
+      <Interactable onClick={() => window.open("https://www.behance.net/gallery/179602465/Rock-My-Boat",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/ProjectScreens/ProjectScreenR3.glb"/>
+      </Interactable>
 
 
       
       {/*icons*/}
       
       <Floating height = {0.06} speed = {11}>
+      <Interactable onClick={() => window.open("https://www.instagram.com/jumping_mangoes/",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/insta.glb"/>
+      </Interactable>
       </Floating>
       <Floating height = {0.06} speed = {11}>
+      <Interactable onClick={() => window.open("https://github.com/Nishant-modi",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/github.glb"/>
+      </Interactable>
       </Floating>
       <Floating height = {0.06} speed = {11}>
+      <Interactable onClick={() => window.open("https://www.artstation.com/jumping_mangoes",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/artstation.glb"/>
+      </Interactable>
       </Floating>
       <Floating height = {0.06} speed = {11}>
+      <Interactable onClick={() => window.open("https://www.behance.net/nishant_modi",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/behance.glb"/>
+      </Interactable>
       </Floating>
       <Floating height = {0.06} speed = {11}>
+      <Interactable onClick={() => window.open("https://jmangoes.itch.io/",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/itch.glb"/>
+      </Interactable>
       </Floating>
       <Floating height = {0.06} speed = {11}>
+      <Interactable onClick={() => window.open("mailto:mnishant0123@gmail.com",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/mail.glb"/>
+      </Interactable>
       </Floating>
       <Floating height = {0.06} speed = {11}>
+      <Interactable onClick={() => window.open("https://www.google.com",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/resume.glb"/>
+      </Interactable>
       </Floating>
 
 
