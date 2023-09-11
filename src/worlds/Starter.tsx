@@ -52,7 +52,7 @@ export default function Starter() {
     {/*<StandardReality>  */}
       <Bloom/>
       
-      
+      <HDRI src = "./Skyhdr4.hdr" rotation-z = {Math.PI/2} rotation-y = {Math.PI} /> 
       
       <directionalLight intensity = {3} position={[1, 0.3, 0]}/>
           
@@ -68,51 +68,7 @@ export default function Starter() {
       </directionalLight>
       <Audio url="./Audio/cricket.mp3" position = {[0,0,-100]} volume = {0.2} rollOff = {0}/>
       <Audio url="./Audio/beam.mp3" position = {[0,1,-40]} volume = {2} rollOff = {1.3}/>
-      <EffectComposer>
-      <DotScreen
-        blendFunction={BlendFunction.NORMAL}
-        angle={Math.PI * 0.5}
-        scale={5}
-        opacity = {0.2}
-      />
-    </EffectComposer>
-
-    
-
-    <VisualEffect index={0}>
-    <UnrealBloomPass args={[new Vector2(256, 256), 0.1, 0.01, 0.95]} />
-    </VisualEffect>
-      <ambientLight intensity = {0} />
-      {/*<Model scale = {0.007} rotation-x = {-Math.PI/2} position-y = {0.01} src = "./vrShowcaseGlassFixed.glb"/>
-      <Model scale = {0.01} position-y = {0.7} src = "./product.glb"/>
       
-      <Collidable triLimit={1000} enabled={true} hideCollisionMeshes={false}>
-      <Model scale = {1} position-y = {0.3} position-x = {-100} src = "./mainBeamBase.glb"/>
-      <Model scale = {0.35} position-y = {0} position-x = {-5} rotation-y={Math.PI/2} src = "./tree.glb"/>
-      </Collidable>
-
-      {/*<Model scale = {0.27} position-y = {0.3} position-x = {5} src = "./mainBeamFloor.glb"/>
-      <Model scale = {1} position-y = {-5} position-x = {5} rotation-y={(Math.PI/2)+0.1} src = "./Island_Pillars.glb"/>
- 
-      <Icosahedron args ={[5,1]} position-y = {10}position-x = {-100} >
-      </Icosahedron>
-
-      <pointLight intensity = {1} position={[10, 10, 11]} />
-      
-      <Model scale = {0.5} position-y = {-1} position-x = {-100} rotation-y={(-Math.PI/2)+1.6} src = "./Final2.glb"/>
-
-      <Collidable triLimit={10000} enabled={true} hideCollisionMeshes={false}>
-      <Model scale = {0.5} position-y = {-1.7} position-x = {-100} rotation-y={(-Math.PI/2)+1.6} src = "./Models/BeamLines.glb"/>
-      <Model scale = {0.5} position-y = {-1.7} position-x = {-100} rotation-y={(-Math.PI/2)+1.6} src = "./Models/MainBeam.glb"/>
-      <Model receiveShadow scale = {0.5} position-y = {-1} position-x = {-100} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Islands.glb"/>
-      <Model castShadow receiveShadow scale = {0.5} position-y = {-1} position-x = {-100} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Bridges.glb"/>
-      <Model scale = {0.5} position-y = {-1.5} position-x = {-100} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Machine_Base.glb"/>
-      <Model castShadow scale = {0.5} position-y = {-2} position-x = {-100} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Machine.glb"/>
-      <Model castShadow scale = {0.5} position-y = {-1.7} position-x = {-100} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Dish.glb"/>
-      <Model castShadow scale = {0.5} position-y = {-1} position-x = {-100} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Hall.glb"/>
-      <Model scale = {0.5} position-y = {-1} position-x = {-100} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Banners.glb"/>
-      </Collidable >
-      */}
       
       {/*main models*/}
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Floor.glb"/>
@@ -124,36 +80,26 @@ export default function Starter() {
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Umbrella.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/IconStands.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/jmangoes.glb"/>
-      <Floating height = {0.3} speed = {11}>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/SphereBeam.glb"/>
-      </Floating>
+      
 
       {/*landing screen and buttons*/}
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Screen.glb"/>
 
       <Interactable onClick={() => window.open("https://drive.google.com/file/d/1X2LusDCb6YB3cvA1GwnEY6yVXszrrEmP/view?usp=sharing",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/button1.glb"/>
-      <Floating height = {0.06} speed = {11}>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/cone1.glb"/>
-      </Floating>
+      
       </Interactable>
       <Interactable onClick={() => window.open("https://www.behance.net/nishant_modi",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/button2.glb"/>
-      <Floating height = {0.06} speed = {11}>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/cone2.glb"/>
-      </Floating>
+      
       </Interactable>
       <Interactable onClick={() => window.open("https://jmangoes.itch.io/",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/button3.glb"/>
-      <Floating height = {0.06} speed = {11}>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/cone3.glb"/>
-      </Floating>
+      
       </Interactable>
       <Interactable onClick={() => window.open("https://github.com/Nishant-modi",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/button4.glb"/>
-      <Floating height = {0.06} speed = {11}>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/cone4.glb"/>
-      </Floating>
+      
       </Interactable>
 
       {/*project screens*/}
@@ -176,7 +122,27 @@ export default function Starter() {
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/ProjectScreens/ProjectScreenR3.glb"/>
       </Interactable>
       
-
+      {/*trees*/}
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree1.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree2.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree3.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree4.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree5.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree6.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree7.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree8.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree9.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree10.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree11.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree12.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree13.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree14.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree15.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree16.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree17.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree18.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree19.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree20.glb"/>
       
       {/*icons*/}
       
@@ -218,30 +184,25 @@ export default function Starter() {
 
 
 
+      <Floating height = {0.06} speed = {11}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/cone1.glb"/>
+      </Floating>
+      <Floating height = {0.06} speed = {11}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/cone2.glb"/>
+      </Floating>
+      <Floating height = {0.06} speed = {11}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/cone3.glb"/>
+      </Floating>
+      <Floating height = {0.06} speed = {11}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/cone4.glb"/>
+      </Floating>
+
+      <Floating height = {0.3} speed = {11}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/SphereBeam.glb"/>
+      </Floating>
 
 
-
-      {/*trees*/}
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree1.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree2.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree3.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree4.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree5.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree6.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree7.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree8.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree9.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree10.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree11.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree12.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree13.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree14.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree15.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree16.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree17.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree18.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree19.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree20.glb"/>
+      
       
       {/*<Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree21.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Trees/tree22.glb"/>
@@ -321,7 +282,7 @@ export default function Starter() {
       
 
       {/*<Fog color = "#2C1A10" near = {0.1} far = {80}/>
-      <HDRI src = "./Skyhdr3.hdr" rotation-z = {Math.PI/2} rotation-y = {Math.PI} /> 
+      
       
       {/*<TransparentFloor opacity={0.1} />
       <Camera />
