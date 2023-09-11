@@ -13,7 +13,7 @@ import { UnrealBloomPass, DotScreenPass } from "three-stdlib";
 //import {UnrealBloomPass} from "three/examples/jsm/postprocessing/UnrealBloomPass";
 import { useFrame, useThree, useLoader, Canvas, createPortal as createPortal$1, extend, ReactThreeFiber } from '@react-three/fiber';
 //import { Canvas } from 'react-three-fiber';
-import {Box, Center, Icosahedron, Sky, shaderMaterial} from "@react-three/drei";
+//import {Box, Center, Icosahedron, Sky, shaderMaterial} from "@react-three/drei";
 import Bloom from "../ideas/Bloom";
 //import { sync } from 'glob';
 
@@ -22,7 +22,7 @@ import Bloom from "../ideas/Bloom";
 
 
 
-function Effects() {
+/*function Effects() {
   return (
     <EffectComposer>
       <DotScreen
@@ -34,7 +34,7 @@ function Effects() {
       />
     </EffectComposer>
   );
-}
+}*/
 
 //const dirGlob = require('dir-glob');
 
@@ -48,23 +48,26 @@ export default function Starter() {
   return (
     
     
-    <StandardReality environmentProps={{name:"jmangoes", pauseMenu : null, dev : false}} playerProps= {{pos : [20,1,130] , speed : 6}} toolbeltProps={{showOnSpawn : false}}> 
+    <StandardReality environmentProps={{name:"jmangoes"}} playerProps= {{pos : [20,1,130] , speed : 6}}> 
     {/*<StandardReality>  */}
       <Bloom/>
-      <ambientLight intensity = {0} />
-      <pointLight intensity = {0} position={[10, 10, 11]} />
       
       
-      <directionalLight intensity = {3} castShadow position={[1, 0.3, 0]} shadow-mapSize={[1024, 1024]}>
-          <orthographicCamera attach="shadow-camera" args={[-10, 10, 10, -10]} />
-      </directionalLight>
+      
+      <directionalLight intensity = {3} position={[1, 0.3, 0]}/>
+          
 
 
       
-      <Audio url="./Audio/cricket.mp3" position = {[0,0,-100]} volume = {0.2} rollOff = {0}/>
-      <Audio url="./Audio/beam.mp3" position = {[0,1,-40]} volume = {2} rollOff = {1.3}/>
+      
 
       {/*
+      <ambientLight intensity = {0} />
+      <pointLight intensity = {0} position={[10, 10, 11]} />
+        <orthographicCamera attach="shadow-camera" args={[-10, 10, 10, -10]} />
+      </directionalLight>
+      <Audio url="./Audio/cricket.mp3" position = {[0,0,-100]} volume = {0.2} rollOff = {0}/>
+      <Audio url="./Audio/beam.mp3" position = {[0,1,-40]} volume = {2} rollOff = {1.3}/>
       <EffectComposer>
       <DotScreen
         blendFunction={BlendFunction.NORMAL}
@@ -282,8 +285,8 @@ export default function Starter() {
       
       
 
-      {/*<Fog color = "#2C1A10" near = {0.1} far = {80}/>*/}
-      <HDRI src = "./Skyhdr4.hdr" rotation-z = {Math.PI/2} rotation-y = {Math.PI} /> 
+      {/*<Fog color = "#2C1A10" near = {0.1} far = {80}/>
+      <HDRI src = "./Skyhdr3.hdr" rotation-z = {Math.PI/2} rotation-y = {Math.PI} /> 
       
       {/*<TransparentFloor opacity={0.1} />
       <Camera />
