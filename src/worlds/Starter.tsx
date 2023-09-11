@@ -141,9 +141,9 @@ export default function Starter() {
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree19.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/treefew/tree20.glb"/>
       
-      {/*icons*/}
+      {/*icons
       
-      <Floating height = {0.06} speed = {11}>
+      <Floating height = {0.06} speed = {11}>*/}
       <Interactable onClick={() => window.open("https://www.linkedin.com/in/nishant-modi/",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/linkedin.glb"/>
       </Interactable>
@@ -179,7 +179,7 @@ export default function Starter() {
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/cone3.glb"/>
       
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/cone4.glb"/>
-      </Floating>
+      
 
       
       
