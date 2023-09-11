@@ -50,11 +50,7 @@ export default function Starter() {
     
     <StandardReality environmentProps={{name:"jmangoes"}} playerProps= {{pos : [20,1,130] , speed : 6}}> 
     {/*<StandardReality>  */}
-      <Bloom/>
       
-      <HDRI src = "./Skyhdr4.hdr" rotation-z = {Math.PI/2} rotation-y = {Math.PI} /> 
-      
-      <directionalLight intensity = {3} position={[1, 0.3, 0]}/>
           
 
 
@@ -80,6 +76,7 @@ export default function Starter() {
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Umbrella.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/IconStands.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/jmangoes.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/SphereBeam.glb"/>
       
 
       {/*landing screen and buttons*/}
@@ -150,56 +147,49 @@ export default function Starter() {
       <Interactable onClick={() => window.open("https://www.linkedin.com/in/nishant-modi/",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/linkedin.glb"/>
       </Interactable>
-      </Floating>
-      <Floating height = {0.06} speed = {11}>
-      <Interactable onClick={() => window.open("https://github.com/Nishant-modi",'_blank')}>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/github.glb"/>
-      </Interactable>
-      </Floating>
-      <Floating height = {0.06} speed = {11}>
+
       <Interactable onClick={() => window.open("https://www.artstation.com/jumping_mangoes",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/artstation.glb"/>
       </Interactable>
-      </Floating>
-      <Floating height = {0.06} speed = {11}>
-      <Interactable onClick={() => window.open("https://www.behance.net/nishant_modi",'_blank')}>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/behance.glb"/>
-      </Interactable>
-      </Floating>
-      <Floating height = {0.06} speed = {11}>
-      <Interactable onClick={() => window.open("https://jmangoes.itch.io/",'_blank')}>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/itch.glb"/>
-      </Interactable>
-      </Floating>
-      <Floating height = {0.06} speed = {11}>
+
       <Interactable onClick={() => window.open("mailto:mnishant0123@gmail.com",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/mail.glb"/>
       </Interactable>
-      </Floating>
-      <Floating height = {0.06} speed = {11}>
+
+      <Interactable onClick={() => window.open("https://github.com/Nishant-modi",'_blank')}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/github.glb"/>
+      </Interactable>
+
+      <Interactable onClick={() => window.open("https://www.behance.net/nishant_modi",'_blank')}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/behance.glb"/>
+      </Interactable>
+
+      <Interactable onClick={() => window.open("https://jmangoes.itch.io/",'_blank')}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/itch.glb"/>
+      </Interactable>
+
       <Interactable onClick={() => window.open("https://drive.google.com/file/d/1X2LusDCb6YB3cvA1GwnEY6yVXszrrEmP/view?usp=sharing",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/resume.glb"/>
       </Interactable>
-      </Floating>
-
-
-
-      <Floating height = {0.06} speed = {11}>
+      
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/cone1.glb"/>
-      </Floating>
-      <Floating height = {0.06} speed = {11}>
+      
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/cone2.glb"/>
-      </Floating>
-      <Floating height = {0.06} speed = {11}>
+      
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/cone3.glb"/>
-      </Floating>
-      <Floating height = {0.06} speed = {11}>
+      
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/cone4.glb"/>
       </Floating>
 
-      <Floating height = {0.3} speed = {11}>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/SphereBeam.glb"/>
-      </Floating>
+      
+      
+      
+
+      <Bloom/>
+      
+      <HDRI src = "./Skyhdr4.hdr" rotation-z = {Math.PI/2} rotation-y = {Math.PI} /> 
+      
+      <directionalLight intensity = {3} position={[1, 0.3, 0]}/>
 
 
       
