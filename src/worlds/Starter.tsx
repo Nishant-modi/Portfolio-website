@@ -62,7 +62,7 @@ export default function Starter() {
 
       
       <Audio url="./Audio/cricket.mp3" position = {[0,0,-100]} volume = {0.2} rollOff = {0}/>
-      <Audio url="./Audio/beam.mp3" position = {[0,1,-40]} volume = {1} rollOff = {1.3}/>
+      <Audio url="./Audio/beam.mp3" position = {[0,1,-40]} volume = {2} rollOff = {1.3}/>
 
       {/*
       <EffectComposer>
@@ -121,24 +121,36 @@ export default function Starter() {
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Umbrella.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/IconStands.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/jmangoes.glb"/>
-      <Floating height = {0.2} speed = {11}>
+      <Floating height = {0.3} speed = {11}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/SphereBeam.glb"/>
       </Floating>
 
       {/*landing screen and buttons*/}
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Screen.glb"/>
 
-      <Interactable onClick={() => window.open("https://www.google.com",'_blank')}>
+      <Interactable onClick={() => window.open("https://drive.google.com/file/d/1X2LusDCb6YB3cvA1GwnEY6yVXszrrEmP/view?usp=sharing",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/button1.glb"/>
+      <Floating height = {0.06} speed = {11}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/cone1.glb"/>
+      </Floating>
       </Interactable>
       <Interactable onClick={() => window.open("https://www.behance.net/nishant_modi",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/button2.glb"/>
+      <Floating height = {0.06} speed = {11}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/cone2.glb"/>
+      </Floating>
       </Interactable>
       <Interactable onClick={() => window.open("https://jmangoes.itch.io/",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/button3.glb"/>
+      <Floating height = {0.06} speed = {11}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/cone3.glb"/>
+      </Floating>
       </Interactable>
       <Interactable onClick={() => window.open("https://github.com/Nishant-modi",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/button4.glb"/>
+      <Floating height = {0.06} speed = {11}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/cone4.glb"/>
+      </Floating>
       </Interactable>
 
       {/*project screens*/}
@@ -154,20 +166,20 @@ export default function Starter() {
       <Interactable onClick={() => window.open("https://www.behance.net/gallery/179602703/Players-Paradox",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/ProjectScreens/ProjectScreenR1.glb"/>
       </Interactable>
-      <Interactable onClick={() => window.open("https://www.behance.net/gallery/179602263/Mirrors20",'_blank')}>
+      <Interactable onClick={() => window.open("https://www.behance.net/gallery/179602465/Rock-My-Boat",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/ProjectScreens/ProjectScreenR2.glb"/>
       </Interactable>
-      <Interactable onClick={() => window.open("https://www.behance.net/gallery/179602465/Rock-My-Boat",'_blank')}>
+      <Interactable onClick={() => window.open("https://www.behance.net/gallery/179602263/Mirrors20",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/ProjectScreens/ProjectScreenR3.glb"/>
       </Interactable>
-
+      
 
       
       {/*icons*/}
       
       <Floating height = {0.06} speed = {11}>
-      <Interactable onClick={() => window.open("https://www.instagram.com/jumping_mangoes/",'_blank')}>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/insta.glb"/>
+      <Interactable onClick={() => window.open("https://www.linkedin.com/in/nishant-modi/",'_blank')}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/linkedin.glb"/>
       </Interactable>
       </Floating>
       <Floating height = {0.06} speed = {11}>
@@ -196,7 +208,7 @@ export default function Starter() {
       </Interactable>
       </Floating>
       <Floating height = {0.06} speed = {11}>
-      <Interactable onClick={() => window.open("https://www.google.com",'_blank')}>
+      <Interactable onClick={() => window.open("https://drive.google.com/file/d/1X2LusDCb6YB3cvA1GwnEY6yVXszrrEmP/view?usp=sharing",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/resume.glb"/>
       </Interactable>
       </Floating>
@@ -222,7 +234,7 @@ export default function Starter() {
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Trees/tree13.glb"/>*/}
       
 
-      { 
+      { /*
         trees.map(tree => (
           <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = {tree}/>
         ))
