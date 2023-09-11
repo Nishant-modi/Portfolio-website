@@ -284,8 +284,10 @@ export default function Starter() {
 
       {/*<Fog color = "#2C1A10" near = {0.1} far = {80}/>*/}
       <HDRI src = "./Skyhdr4.hdr" rotation-z = {Math.PI/2} rotation-y = {Math.PI} /> 
+      
+      {/*<TransparentFloor opacity={0.1} />
       <Camera />
-      {/*<TransparentFloor opacity={0.1} />*/}
+      */}
       
       
     </StandardReality>
