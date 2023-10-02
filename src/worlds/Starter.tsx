@@ -66,7 +66,7 @@ export default function Starter() {
       <Audio url="./Audio/beam.mp3" position = {[0,1,-40]} volume = {2} rollOff = {1.3}/>
       
       
-      {/*main models*/}
+      {/*main models
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Floor.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/FloorGuide.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Mountains.glb"/>
@@ -76,13 +76,16 @@ export default function Starter() {
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Umbrella.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/IconStands.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/jmangoes.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/SphereBeam.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/SphereBeam.glb"/>*/}
       
+
+
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/CompressedModels/staticObjects - meshopt high.glb"/>
 
       {/*landing screen and buttons*/}
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Screen.glb"/>
 
-      <Interactable onClick={() => window.open("https://drive.google.com/file/d/1X2LusDCb6YB3cvA1GwnEY6yVXszrrEmP/view?usp=sharing",'_blank')}>
+      <Interactable onClick={() => window.open("https://drive.google.com/file/d/1HRFKVsutt9KchbkFdJcdCNTKpf0UnukA/view?usp=sharing",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/Button1.glb"/>
       
       </Interactable>
@@ -94,7 +97,7 @@ export default function Starter() {
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/Button3.glb"/>
       
       </Interactable>
-      <Interactable onClick={() => window.open("https://github.com/Nishant-modi",'_blank')}>
+      <Interactable onClick={() => window.open("https://www.linkedin.com/in/nishant-modi/",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/Button4.glb"/>
       
       </Interactable>
@@ -146,11 +149,12 @@ export default function Starter() {
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/itch.glb"/>
       </Interactable>
 
-      <Interactable onClick={() => window.open("https://drive.google.com/file/d/1X2LusDCb6YB3cvA1GwnEY6yVXszrrEmP/view?usp=sharing",'_blank')}>
+      <Interactable onClick={() => window.open("https://drive.google.com/file/d/1HRFKVsutt9KchbkFdJcdCNTKpf0UnukA/view?usp=sharing",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/resume.glb"/>
       </Interactable>
       
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/Cone.glb"/>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/ConeScreen.glb"/>
       </Floating>
       
       {/*<Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/cone2.glb"/>
@@ -168,7 +172,7 @@ export default function Starter() {
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Trees/tree11.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Trees/tree8.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Trees/tree20.glb"/>
-      */}
+      
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Trees/tree1.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Trees/tree2.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Trees/tree3.glb"/>
