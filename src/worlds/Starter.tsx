@@ -81,6 +81,7 @@ export default function Starter() {
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/IconStands.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/jmangoes.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/SphereBeam.glb"/>
+      <Model scale = {1} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.03} src = "./Models/skybox.glb"/>
 
 
       
@@ -210,14 +211,16 @@ export default function Starter() {
 
       <Bloom/>
       
-      <HDRI src = "./Skyhdr4.hdr" rotation-z = {Math.PI/2} rotation-y = {Math.PI} /> 
+      
       
       <directionalLight intensity = {3} position={[1, 0.3, 0]}/>
 
 
       
       
-      {/*<Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Trees/tree21.glb"/>
+      {/*
+      <HDRI src = "./Skyhdr4.hdr" rotation-z = {Math.PI/2} rotation-y = {Math.PI} /> 
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Trees/tree21.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Trees/tree22.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Trees/tree23.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Trees/tree24.glb"/>
