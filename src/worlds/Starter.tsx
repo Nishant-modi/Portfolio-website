@@ -48,7 +48,7 @@ export default function Starter() {
   return (
     
     
-    <StandardReality environmentProps={{name:"jmangoes"}} playerProps= {{pos : [-50,1,1.4] , speed : 6, rot: -Math.PI/2}}> 
+    <StandardReality environmentProps={{name:"jmangoes", dev:true}} playerProps= {{pos : [-50,1,1.4] , speed : 6, rot: -Math.PI/2}}> 
     {/*<StandardReality>  */}
       
           
@@ -58,7 +58,7 @@ export default function Starter() {
       
 
       {/*
-      <ambientLight intensity = {0} />
+      
       <pointLight intensity = {0} position={[10, 10, 11]} />
         <orthographicCamera attach="shadow-camera" args={[-10, 10, 10, -10]} />
       </directionalLight>
@@ -68,10 +68,14 @@ export default function Starter() {
       
       {/*main models
     <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/CompressedModels/staticObjects - meshopt medium.glb"/>
+
+
+    
       */}
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Mountains.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Floor.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/FloorGuide.glb"/>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Mountains.glb"/>
+      
       
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/MachineBase.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/MainMachine.glb"/>
@@ -209,13 +213,13 @@ export default function Starter() {
       
       
 
+      
+      
+      
+      
+      <directionalLight intensity = {4} position={[1, 0.3, 0]} color={0xF0F1FF}/>
+      <ambientLight intensity = {0.63} color = {0xC9C2B3}/>
       <Bloom/>
-      
-      
-      
-      <directionalLight intensity = {3} position={[1, 0.3, 0]}/>
-
-
       
       
       {/*
