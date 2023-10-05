@@ -48,7 +48,7 @@ export default function Starter() {
   return (
     
     
-    <StandardReality environmentProps={{name:"jmangoes", dev:true}} playerProps= {{pos : [-50,1,1.4] , speed : 6, rot: -Math.PI/2}}> 
+    <StandardReality environmentProps={{name:"jmangoes", dev:false}} playerProps= {{pos : [-50,1,1.4] , speed : 7.5, rot: -Math.PI/2}}> 
     {/*<StandardReality>  */}
       
           
@@ -120,7 +120,7 @@ export default function Starter() {
       <Interactable onClick={() => window.open("https://www.artstation.com/jumping_mangoes",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/ProjectScreens/ProjectScreenL3.glb"/>
       </Interactable>
-      <Interactable onClick={() => window.open("https://www.behance.net/gallery/179602703/Players-Paradox",'_blank')}>
+      <Interactable onClick={() => window.open("https://www.behance.net/gallery/181548207/Players-Paradox-Game-Prototype",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/ProjectScreens/ProjectScreenR1.glb"/>
       </Interactable>
       <Interactable onClick={() => window.open("https://www.behance.net/gallery/179602465/Rock-My-Boat",'_blank')}>
