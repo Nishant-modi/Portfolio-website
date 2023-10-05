@@ -1,22 +1,22 @@
 //import { VisualEffect } from "myvr/mymain.js";
 import { VisualEffect } from "spacesvr";
-import { UnrealBloomPass, DotScreenPass, HalftonePass, HalftoneShader} from "three-stdlib";
+import { UnrealBloomPass, DotScreenPass, HalftonePass, HalftoneShader, OutlinePass} from "three-stdlib";
 import { extend, ReactThreeFiber } from "@react-three/fiber";
 
 import { useState } from "react";
 import { Vector2 } from "three";
 
-extend({ UnrealBloomPass, DotScreenPass, HalftonePass, HalftoneShader });
+extend({ UnrealBloomPass, DotScreenPass, HalftonePass, HalftoneShader,OutlinePass });
 
 
 const params = {
-    shape: 1,
-    radius: 5,
-    rotateR: Math.PI / 12,
-    rotateB: Math.PI / 12 * 2,
-    rotateG: Math.PI / 12 * 3,
-    scatter: 0.3,
-    blending: 0.5,
+    shape: 3,
+    radius: 0.005,
+    rotateR: Math.PI/12,
+    rotateB: Math.PI/12,
+    rotateG: Math.PI/12,
+    scatter: 0.1,
+    blending: 1,
     blendingMode: 1,
     greyscale: 0,
     disable: 0
@@ -38,6 +38,10 @@ declare global {
         HalftonePass,
         typeof HalftonePass
       >;
+      outlinePass: ReactThreeFiber.Node<
+        OutlinePass,
+        typeof OutlinePass
+      >;
     }
   }
 }
@@ -49,10 +53,16 @@ export default function Bloom() {
 
   return (
     <VisualEffect index={1}>
-      
       <unrealBloomPass args={[res, 1, 1, 0.95]} />
+      
+      <halftonePass args = {[1,1,params]}/>
+      
+      {/*
+      <unrealBloomPass args={[res, 1, 1, 0.95]} />
+      <halftonePass args = {[1,1,params]}/>
       <dotScreenPass args={[res, 1, 20]} />
-      {/*<halftonePass args = {[1,1,params]}/>*/}
+      */}
+      
     </VisualEffect>
   );
 }
