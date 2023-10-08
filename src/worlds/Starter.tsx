@@ -93,7 +93,7 @@ export default function Starter() {
       {/*landing screen and buttons*/}
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Screen.glb"/>
 
-      <Interactable onClick={() => window.open("https://drive.google.com/file/d/1HRFKVsutt9KchbkFdJcdCNTKpf0UnukA/view?usp=sharing",'_blank')}>
+      <Interactable onClick={() => window.open("https://drive.google.com/file/d/1KPIGCFLc_1ots8Wl-Wi5hb-tNVTn-UBP/view?usp=sharing",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/Button1.glb"/>
       
       </Interactable>
@@ -114,19 +114,19 @@ export default function Starter() {
       <Interactable onClick={() => window.open("https://www.behance.net/gallery/179602967/de_canopy_0_1",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/ProjectScreens/ProjectScreenL1.glb"/>
       </Interactable>
-      <Interactable onClick={() => window.open("https://www.behance.net/gallery/179603239/jMangoes-Portfolio-Website",'_blank')}>
+      <Interactable onClick={() => window.open("https://www.behance.net/gallery/181548207/Players-Paradox-Game-Prototype",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/ProjectScreens/ProjectScreenL2.glb"/>
       </Interactable>
       <Interactable onClick={() => window.open("https://www.artstation.com/jumping_mangoes",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/ProjectScreens/ProjectScreenL3.glb"/>
       </Interactable>
-      <Interactable onClick={() => window.open("https://www.behance.net/gallery/181548207/Players-Paradox-Game-Prototype",'_blank')}>
+      <Interactable onClick={() => window.open("https://www.behance.net/gallery/181633421/Forgotten-Melodies-Game-Prototype",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/ProjectScreens/ProjectScreenR1.glb"/>
       </Interactable>
-      <Interactable onClick={() => window.open("https://www.behance.net/gallery/179602465/Rock-My-Boat",'_blank')}>
+      <Interactable onClick={() => window.open("https://www.behance.net/gallery/179602263/Mirrors20",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/ProjectScreens/ProjectScreenR2.glb"/>
       </Interactable>
-      <Interactable onClick={() => window.open("https://www.behance.net/gallery/179602263/Mirrors20",'_blank')}>
+      <Interactable onClick={() => window.open("https://www.behance.net/gallery/179603239/jMangoes-Portfolio-Website",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/ProjectScreens/ProjectScreenR3.glb"/>
       </Interactable>
 
@@ -157,7 +157,7 @@ export default function Starter() {
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/itch.glb"/>
       </Interactable>
 
-      <Interactable onClick={() => window.open("https://drive.google.com/file/d/1HRFKVsutt9KchbkFdJcdCNTKpf0UnukA/view?usp=sharing",'_blank')}>
+      <Interactable onClick={() => window.open("https://drive.google.com/file/d/1KPIGCFLc_1ots8Wl-Wi5hb-tNVTn-UBP/view?usp=sharing",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/resume.glb"/>
       </Interactable>
       
