@@ -132,35 +132,73 @@ export default function Starter() {
 
 
       {/*icons*/}
-      <Floating height = {0.06} speed = {11}>
+      
       <Interactable onClick={() => window.open("https://www.linkedin.com/in/nishant-modi/",'_blank')}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/iconButtons/button1.glb"/>
+      <Floating height = {0.06} speed = {11}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/linkedin.glb"/>
-      </Interactable>
-
-      <Interactable onClick={() => window.open("https://www.artstation.com/jumping_mangoes",'_blank')}>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/artstation.glb"/>
-      </Interactable>
-
-      <Interactable onClick={() => window.open("mailto:mnishant0123@gmail.com",'_blank')}>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/mail.glb"/>
-      </Interactable>
-
-      <Interactable onClick={() => window.open("https://github.com/Nishant-modi",'_blank')}>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/github.glb"/>
-      </Interactable>
-
-      <Interactable onClick={() => window.open("https://www.behance.net/nishant_modi",'_blank')}>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/behance.glb"/>
-      </Interactable>
-
-      <Interactable onClick={() => window.open("https://jmangoes.itch.io/",'_blank')}>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/itch.glb"/>
-      </Interactable>
-
-      <Interactable onClick={() => window.open("https://drive.google.com/file/d/1KPIGCFLc_1ots8Wl-Wi5hb-tNVTn-UBP/view?usp=sharing",'_blank')}>
-      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/resume.glb"/>
+      </Floating>
       </Interactable>
       
+
+      
+      <Interactable onClick={() => window.open("https://www.artstation.com/jumping_mangoes",'_blank')}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/iconButtons/button2.glb"/>
+      <Floating height = {0.06} speed = {11}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/artstation.glb"/>
+      </Floating>
+      </Interactable>
+      
+
+      
+      <Interactable onClick={() => window.open("https://drive.google.com/file/d/1KPIGCFLc_1ots8Wl-Wi5hb-tNVTn-UBP/view?usp=sharing",'_blank')}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/iconButtons/button3.glb"/>
+      <Floating height = {0.07} speed = {11}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/resume.glb"/>
+      </Floating>
+      </Interactable>
+      
+
+      
+
+      
+      <Interactable onClick={() => window.open("https://www.behance.net/nishant_modi",'_blank')}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/iconButtons/button4.glb"/>
+      <Floating height = {0.07} speed = {11}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/behance.glb"/>
+      </Floating>
+      </Interactable>
+      
+
+      
+      <Interactable onClick={() => window.open("https://jmangoes.itch.io/",'_blank')}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/iconButtons/button5.glb"/>
+      <Floating height = {0.07} speed = {11}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/itch.glb"/>
+      </Floating>
+      </Interactable>
+      
+
+      
+      <Interactable onClick={() => window.open("https://github.com/Nishant-modi",'_blank')}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/iconButtons/button6.glb"/>
+      <Floating height = {0.07} speed = {11}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/github.glb"/>
+      </Floating>
+      </Interactable>
+      
+
+
+      
+      <Interactable onClick={() => window.open("mailto:mnishant0123@gmail.com",'_blank')}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/iconButtons/button7.glb"/>
+      <Floating height = {0.07} speed = {11}>
+      <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/mail.glb"/>
+      </Floating>
+      </Interactable>
+      
+      
+      <Floating height = {0.06} speed = {11}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/Cone.glb"/>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/ConeScreen.glb"/>
       </Floating>
