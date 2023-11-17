@@ -93,7 +93,7 @@ export default function Starter() {
       {/*landing screen and buttons*/}
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Screen.glb"/>
 
-      <Interactable onClick={() => window.open("https://drive.google.com/file/d/18tDyXpNJ3NCUQhBmLJhPnWsNBjkOwetg/view?usp=sharing",'_blank')}>
+      <Interactable onClick={() => window.open("https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:92e16dfa-631e-3d2d-bb29-1534c0848d95",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Buttons/Button1.glb"/>
       
       </Interactable>
@@ -151,7 +151,7 @@ export default function Starter() {
       
 
       
-      <Interactable onClick={() => window.open("https://drive.google.com/file/d/18tDyXpNJ3NCUQhBmLJhPnWsNBjkOwetg/view?usp=sharing",'_blank')}>
+      <Interactable onClick={() => window.open("https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:92e16dfa-631e-3d2d-bb29-1534c0848d95",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/iconButtons/button3.glb"/>
       <Floating height = {0.07} speed = {11}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/resume.glb"/>
