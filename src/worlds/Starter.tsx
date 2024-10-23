@@ -190,7 +190,7 @@ export default function Starter() {
 
 
       
-      <Interactable onClick={() => window.open("mailto:nishant@jmangoes.in",'_blank')}>
+      <Interactable onClick={() => window.open("mailto:mnishant0123@gmail.com",'_blank')}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/iconButtons/button7.glb"/>
       <Floating height = {0.07} speed = {11}>
       <Model scale = {0.25} position-y = {-1.7} position-x = {0} rotation-y={(-Math.PI/2)+1.6} src = "./Models/Icons/mail.glb"/>
